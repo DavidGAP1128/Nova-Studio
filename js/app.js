@@ -24,9 +24,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     mobileMenu.className = 'mobile-menu';
     mobileMenu.innerHTML = `
       <div class="menu-items">
-        <a href="home.html">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="portafolio.html">Portafolio</a>
-        <a href="home.html#contacto" 
+        <a href="index.html#contacto" 
            class="px-6 py-3 rounded-full font-bold text-center bg-secondary" 
            style="margin-top: 1rem;">Contacto</a>
       </div>
