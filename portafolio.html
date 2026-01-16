@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Nova Creative Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="/images/isotipo azul@4x.png" type="image/x-icon">
+
+</head>
+<body class="noise-texture">
+    
+     
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-sm nav-bg">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+          <div class="flex justify-between items-center">
+            
+            <!-- Logo -->
+            <div class="flex items-center space-x-4">
+                <img src="/images/logo 3@4x.png" alt="Logo" 
+                class="h-28 w-auto object-contain transform scale-125">
+                       </div>
+      
+            <!-- Menú -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="home.html" class="hover:opacity-70 transition-opacity font-medium">Inicio</a>
+                <a href="home.html#contacto" class="px-6 py-2 rounded-full font-bold hover-scale bg-primary text-secondary">
+                    Contacto
+                </a>
+            </div>
+      
+            <!-- Botón móvil -->
+            <button class="md:hidden p-2" id="mobile-menu-btn">
+              <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 bg-primary">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-block mb-6 px-6 py-2 rounded-full border-2 border-secondary text-secondary">
+                <span class="bebas text-lg">NUESTRO TRABAJO</span>
+            </div>
+            
+            <h1 class="bebas text-7xl md:text-8xl lg:text-9xl mb-6 text-shadow-bold leading-none text-secondary font-bold">
+                PORTAFOLIO
+            </h1>
+            
+            <p class="text-xl md:text-2xl mb-8 leading-relaxed text-secondary italic max-w-3xl mx-auto">
+                Proyectos que reflejan nuestra visión: marcas con propósito, estrategia y personalidad.
+            </p>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute bottom-20 left-10 w-32 h-32 rounded-full opacity-10 bg-secondary"></div>
+        <div class="absolute top-40 right-20 w-20 h-20 rounded-full opacity-10 bg-secondary"></div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-12 bg-secondary">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-wrap justify-center gap-4 mb-2">
+                <button class="px-6 py-3 rounded-full bebas text-lg bg-primary text-secondary hover-scale" data-filter="all">
+                    TODOS
+                </button>
+                <button class="px-6 py-3 rounded-full bebas text-lg border-2 border-primary text-primary hover-scale" data-filter="branding">
+                    BRANDING
+                </button>
+                <button class="px-6 py-3 rounded-full bebas text-lg border-2 border-primary text-primary hover-scale" data-filter="social">
+                    REDES SOCIALES
+                </button>
+                <button class="px-6 py-3 rounded-full bebas text-lg border-2 border-primary text-primary hover-scale" data-filter="web">
+                    WEB
+                </button>
+                <button class="px-6 py-3 rounded-full bebas text-lg border-2 border-primary text-primary hover-scale" data-filter="content">
+                    CONTENIDO
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-12 bg-secondary">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 1</h3>
+                                <p class="text-secondary text-sm">Branding & Identidad Visual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="social">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 2</h3>
+                                <p class="text-secondary text-sm">Gestión de Redes Sociales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 3</h3>
+                                <p class="text-secondary text-sm">Diseño Web</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 4</h3>
+                                <p class="text-secondary text-sm">Branding & Identidad Visual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="content">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 5</h3>
+                                <p class="text-secondary text-sm">Producción de Contenido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="social">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 6</h3>
+                                <p class="text-secondary text-sm">Gestión de Redes Sociales</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="portfolio-item" data-category="branding">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 7</h3>
+                                <p class="text-secondary text-sm">Branding & Identidad Visual</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 8</h3>
+                                <p class="text-secondary text-sm">Diseño Web</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="portfolio-item" data-category="content">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-primary group cursor-pointer hover-scale">
+                        <div class="aspect-square bg-primary flex items-center justify-center">
+                            <i class="fas fa-image fa-5x text-secondary opacity-20"></i>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h3 class="bebas text-3xl text-secondary mb-2">PROYECTO 9</h3>
+                                <p class="text-secondary text-sm">Producción de Contenido</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-secondary">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="bebas text-6xl md:text-8xl mb-6 text-primary text-shadow-bold font-bold">
+                ¿LISTO PARA CREAR ALGO INCREÍBLE?
+            </h2>
+            <p class="text-xl text-primary text-primary-90 mb-8 italic">
+                Hablemos de tu proyecto y hagamos realidad tu visión
+            </p>
+            <a href="home.html#contacto" class="inline-block px-12 py-5 rounded-full font-bold text-xl bebas bg-primary text-secondary hover-scale">
+                CONTACTAR
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-primary">
+        <div class="max-w-7xl mx-auto px-6">
+          
+          <!-- Grid principal -->
+          <div class="grid md:grid-cols-3 gap-12 items-center text-center md:text-left">
+            
+            <!-- Logo + slogan -->
+            <div class="flex flex-col items-center md:items-start space-y-4">
+              <img src="/images/logo 4@4x.png" alt="Logo" class="w-60 h-48 object-contain mx-auto md:mx-0">
+              <div class="bebas text-xl text-secondary tracking-wide">
+                MARCA CON INTENCIÓN
+              </div>
+            </div>
+            
+            <!-- Espacio central vacío para simetría -->
+            <div class="hidden md:block"></div>
+            
+            <!-- Copyright -->
+            <div class="text-secondary text-secondary-70 text-sm md:text-base md:text-right">
+              © 2025 Nova Creative Studio. Todos los derechos reservados.
+            </div>
+          </div>
+          
+        </div>
+    </footer>
+
+    <script src="js/app.js">
+    
+    </script>
+</body>
+</html>
