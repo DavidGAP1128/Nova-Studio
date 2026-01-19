@@ -653,6 +653,8 @@ img {
   @media (max-width: 1024px) {
     #servicios h1 { font-size: 3rem; text-align: center; }
     #proceso h1 { font-size: 2.8rem; text-align: center; }
+    #proceso .process-step h3 { font-size: 0.5rem; }
+
   }
   
 
