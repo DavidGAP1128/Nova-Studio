@@ -639,7 +639,7 @@ img {
 
   @media (max-width: 768px) {
     #servicios .grid { grid-template-columns: 1fr; gap: 1.5rem; }
-    #servicios h1 { font-size: 3.5rem; text-align: center; }
+    #servicios h1 { font-size: 4.5rem; text-align: center; }
     #servicios .service-card { padding: 1.5rem; }
     #servicios .service-card h3 { font-size: 1.25rem; }
   }
