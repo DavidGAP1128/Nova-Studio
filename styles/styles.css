@@ -639,13 +639,13 @@ img {
 
   @media (max-width: 768px) {
     #servicios .grid { grid-template-columns: 1fr; gap: 1.5rem; }
-    #servicios h1 { font-size: 2rem; text-align: center; }
+    #servicios h1 { font-size: 2.5rem; text-align: center; }
     #servicios .service-card { padding: 1.5rem; }
     #servicios .service-card h3 { font-size: 1.25rem; }
   }
   @media (max-width: 768px) {
     #proceso { padding: 2rem 1rem; }
-    #proceso h1 { font-size: 2rem; text-align: center; }
+    #proceso h1 { font-size: 2.5rem; text-align: center; }
     #proceso .process-step { flex-direction: column; text-align: center; padding: 1rem; }
     #proceso .process-step h3 { font-size: 2rem; }
   }
