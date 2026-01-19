@@ -647,7 +647,7 @@ img {
     #proceso { padding: 2rem 1rem; }
     #proceso h1 { font-size: 3.5rem; text-align: center; }
     #proceso .process-step { flex-direction: column; text-align: center; padding: 1rem; }
-    #proceso .process-step h3 { font-size: 2rem; }
+    #proceso .process-step h3 { font-size: 1rem; }
   }
 
   @media (max-width: 1024px) {
