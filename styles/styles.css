@@ -650,6 +650,12 @@ img {
     #proceso .process-step h3 { font-size: 2rem; }
   }
 
+  @media (max-width: 1024px) {
+    #servicios h1 { font-size: 3rem; text-align: center; }
+    #proceso h1 { font-size: 3.5rem; text-align: center; }
+  }
+  
+
   @media (max-width: 425px) {
     #proceso .process-step h3 { font-size: 1.5rem; }
 
